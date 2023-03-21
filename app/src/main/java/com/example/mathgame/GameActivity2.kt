@@ -109,9 +109,10 @@ class GameActivity2 : AppCompatActivity() {
 
         val number1 = Random.nextInt(0, 100)
         val number2 = Random.nextInt(0, 100)
+        if(number1>number2){
         question.text = "$number1-$number2"
         correctanswer = number1 - number2
-
+        }
 
         startTimer()
     }
